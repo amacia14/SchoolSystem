@@ -11,27 +11,52 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 "style=" height: 100px;"></div>
+    </div>
+    <div class="row">
+    <div class="field">
+    <div class="col-md-12 col-md-offset-4">
+      <%= form.label :name %>
+      <div class="input"> <%= form.text_field :name %></div>
+    </div>
+    </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :department %>
-    <%= form.text_field :department %>
-  </div>
+    <div class="row">
+      <div class="field">
+        <div class="col-md-12 col-md-offset-4">
+      <%= form.label :department %>
+          <div class="input"> <%= form.text_field :department %></div>
+        </div>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :number %>
-    <%= form.number_field :number %>
-  </div>
+    <div class="row">
+      <div class="field">
+        <div class="col-md-12 col-md-offset-4">
+          <%= form.label :number %>
+          <div class="input"> <%= form.number_field :number %></div>
+        </div>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :creditHours %>
-    <%= form.number_field :creditHours %>
-  </div>
+    <div class="row">
+      <div class="field">
+        <div class="col-md-12 col-md-offset-4">
+          <%= form.label :creditHours %>
+          <div class="input"> <%= form.number_field :creditHours %></div>
+        </div>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <div class="row">
+      <div class="actions">
+        <div class="col-md-12 col-md-offset-4">
+          <div class="sub-btn"> <%= form.submit %></div>
+        </div>
+      </div>
+    </div>
 <% end %>
+</div>

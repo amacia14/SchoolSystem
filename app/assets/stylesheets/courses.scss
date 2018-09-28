@@ -1,8 +1,14 @@
 // Place all the styles related to the Courses controller here.
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .jumbotron{
     text-align:center;
+    background-image:url("books.jpeg");
+    opacity:.65;
+}
+.header{
+
 }
 
 .item-show{
@@ -11,4 +17,12 @@
 }
 .btn-default:hover{
   color:white;
+}
+.sub-btn{
+  padding:2em;
+
+}
+.input{
+
+
 }
