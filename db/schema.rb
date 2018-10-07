@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_03_222732) do
+ActiveRecord::Schema.define(version: 2018_10_04_204548) do
+
+  create_table "Sections_Students", id: false, force: :cascade do |t|
+    t.integer "Student_id", null: false
+    t.integer "Section_id", null: false
+  end
 
   create_table "courses", force: :cascade do |t|
     t.string "name"

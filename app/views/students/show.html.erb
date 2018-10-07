@@ -20,14 +20,10 @@
   <%= @student.student_id %>
 </p>
 
-<p>
-  <strong>Sectionsenrolled:</strong>
-  <%= @student.sectionsEnrolled %>
-</p>
-
+<h2> Courses Enrolled</h2>
 <p>
   <strong>Section:</strong>
-  <%= @student.section %>
+  <%= @student.sections %>
 </p>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
