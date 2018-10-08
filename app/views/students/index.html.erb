@@ -1,13 +1,8 @@
 <p id="notice"><%= notice %></p>
-<nav class="navbar navbar-light bg-light justify-content-between" style="background-color: #2E2F30;">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
-    <%= form_tag students_path, :method => 'get' do %> >
-      <% end %>
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Home</button>  </form>
-</nav>
+<%= form_tag students_path, :method => 'get' do  %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search" %>
+<%end %>
 <h1>Students</h1>
 
 

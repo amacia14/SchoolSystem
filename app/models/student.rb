@@ -7,9 +7,9 @@ class Student < ApplicationRecord
 
   def self.search(search)
     if search
-      where ([":FirstName LIKE ?","%#{search}%"])
+      where ([':lastName LIKE ?','%#{search}%'])
     else
-      all
+      Student.all
     end
   end
 end
