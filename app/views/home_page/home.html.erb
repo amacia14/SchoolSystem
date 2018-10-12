@@ -1,13 +1,11 @@
+<%= form_tag students_path, :method => 'get' do  %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search" %>
+<%end %>
 
 <div class="home">
 <p id="notice"><%= notice %></p>
 <div class="container">
   <h1 class="title"> WELCOME </h1>
-  <div class="container-fluid buttons">
-      <div class="btn-spec"> <button type="button" class="btn btn-secondary btn-lg first"><a href="courses/index.html.erb"></a>
-        New Course </button></div>
-      <div class="btn-spec"> <button type="button" class="btn btn-secondary btn-lg second">New Section</button></div>
-      <div class="btn-spec"> <button type="button" class="btn btn-secondary btn-lg third">New Student</button></div>
-  </div>
 </div>
 </div>
