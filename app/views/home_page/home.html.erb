@@ -1,11 +1,32 @@
-<%= form_tag students_path, :method => 'get' do  %>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "Search" %>
-<%end %>
-
-<div class="home">
-<p id="notice"><%= notice %></p>
 <div class="container">
-  <h1 class="title"> WELCOME </h1>
-</div>
+  <div class="row">
+    <div class="col-md-1" style="height:10em;">
+      <div></div>
+    </div>
+  </div>
+  <div class="row justify-content-end">
+
+    <div class="col-md-4 newStudent">
+      <div class="row">
+        <div class="container">
+            <%= link_to 'New Student', students_path(@student), :class => "btn btn-outline-secondary buttonLink" %>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 newSection">
+      <div class="row">
+        <div class="container">
+         <%= link_to 'New Section', sections_path(@section), :class => "btn btn-outline-secondary buttonLink"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 newCourse">
+      <div class="row">
+           <%= link_to 'New Course', courses_path(@course), :class => "btn btn-outline-secondary buttonLink" %>
+      </div>
+    </div>
+  </div>
 </div>

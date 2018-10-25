@@ -1,11 +1,7 @@
 <p id="notice"><%= notice %></p>
-<%= form_tag students_path, :method => 'get' do  %>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "Search" %>
-<%end %>
-
-
-
+<div class="container header">
+  <h1>Students</h1>
+</div>
 <table class="table table-dark">
   <thead>
     <tr>
@@ -25,10 +21,10 @@
         <td><%= student.lastName %></td>
         <td><%= student.email %></td>
         <td><%= student.student_id %></td>
-        <td><%= student.sections %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= student.sectionsEnrolled %></td>
+        <td><%= link_to 'Show', student, :style => 'color:pink;'%></td>
+        <td><%= link_to 'Edit', edit_student_path(student), :style => 'color:pink;' %></td>
+        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, :style => 'color:pink;' %></td>
       </tr>
     <% end %>
   </tbody>
